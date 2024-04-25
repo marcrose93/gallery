@@ -3,45 +3,45 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Container from '@mui/material/Container';
 import Stats from './stats';
-import me from "./assets/me.jpg";
-import me_2 from "./assets/me_2.jpg";
-import me_3 from "./assets/me_3.jpg";
-import me_4 from "./assets/me_4.jpg";
-import me_5 from "./assets/me_5.jpeg";
-import me_6 from "./assets/me_6.jpeg";
-import me_7 from "./assets/me_7.jpeg";
-
+// import me from "./assets/me.jpg";
+// import me_2 from "./assets/me_2.jpg";
+// import me_3 from "./assets/me_3.jpg";
+// import me_4 from "./assets/me_4.jpg";
+// import me_5 from "./assets/me_5.jpeg";
+// import me_6 from "./assets/me_6.jpeg";
+// import me_7 from "./assets/me_7.jpeg";
+import IMAGES from './images/images'
 
 
 export default function App() {
-  const images = [
+  const photos = [
     {
-      original: me_3,
-      thumbnail: me_3
+      original: IMAGES.me_3,
+      thumbnail: IMAGES.me_3
     },
     {
-      original: me_2,
-      thumbnail: me_2,
+      original: IMAGES.me_2,
+      thumbnail: IMAGES.me_2,
     },
     {
-      original: me,
-      thumbnail: me,
+      original: IMAGES.me,
+      thumbnail: IMAGES.me,
     },
     {
-      original: me_4,
-      thumbnail: me_4,
+      original: IMAGES.me_4,
+      thumbnail: IMAGES.me_4,
     },
     {
-      original: me_5,
-      thumbnail: me_5,
+      original: IMAGES.me_5,
+      thumbnail: IMAGES.me_5,
     },
     {
-      original: me_6,
-      thumbnail: me_6,
+      original: IMAGES.me_6,
+      thumbnail: IMAGES.me_6,
     },
     {
-      original: me_7,
-      thumbnail: me_7,
+      original: IMAGES.me_7,
+      thumbnail: IMAGES.me_7,
     },
   ];
 
@@ -63,7 +63,7 @@ export default function App() {
         <h1>demarose</h1>
         <ul className="navigation">
           <li><a href="https://www.marcdrose.com" className="link">Home</a></li>
-          <li><a href="#" className="link">Shop</a></li>
+          <li><a href="https://www.marcdrose.com/dishondirt" className="link">Blog</a></li>
           <li><a href="#" className="link">Music</a></li>
           <li><a href="#" className="link">Contact</a></li>
         </ul>
@@ -99,7 +99,7 @@ export default function App() {
         <h4>Met Gala Megastar</h4>
       </div>
         <ImageGallery
-          items={images}
+          items={photos}
           showPlayButton={true}
           showFullscreenButton={true}
           slideInterval={8000}
